@@ -1,0 +1,166 @@
+@import '../../scss/style';
+
+.footer {
+  color: $totalWhiteColor;
+  font-size: 16px;
+  background: $darkGreenColor;
+  padding: 64px 0 41px !important;
+
+  &_top {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 126px;
+
+    &_col {
+      flex: 1 1 calc((100% / 3) - 2rem);
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 34px;
+    }
+
+    &_social_icons {
+      display: flex;
+      gap: 1rem
+    }
+
+    &_text {
+      margin: 0 0 12px;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        transform: translateY(25%);
+      }
+
+      &_email {
+        &:before {
+          background: url('../../assets/icons/email_icon.svg') 100% no-repeat;
+        }
+      }
+
+      &_phone {
+        &:before {
+          background: url('../../assets/icons/phone_icon.svg') 0 no-repeat;
+        }
+      }
+
+      &_pin {
+        &:before {
+          background: url('../../assets/icons/pin_icon.svg') 0 no-repeat;
+        }
+      }
+    }
+
+    &_logo {
+      margin: 0 0 20px;
+    }
+
+    a {
+      margin-bottom: 14px;
+    }
+  }
+
+  &_bottom {
+    font-size: 14px;
+    padding-top: 18px;
+    border-top: 2px solid $blackDarkColor;
+
+    &_inner {
+      display: flex;
+      gap: 7rem;
+      align-items: center;
+    }
+
+    &_loginRegisterForm {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 768px){
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  }
+
+  &_logo {
+    img {
+      width: 185px;
+      height: 29px;
+    }
+  }
+
+  &_icon {
+    i:before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+    }
+
+    &_vk i {
+      margin-left: 5px;
+
+      &:before {
+        background: url('../../assets/icons/vk_icon.svg') 0 no-repeat;
+      }
+    }
+
+    &_yt i {
+      &:before {
+        background: url('../../assets/icons/youtube_icon.svg') 0 no-repeat;
+      }
+    }
+
+    &_tg i {
+      &:before {
+        background: url('../../assets/icons/telegram_icon.svg') 0 no-repeat;
+      }
+    }
+
+    &_inst i {
+      &:before {
+        background: url('../../assets/icons/instagram_icon.svg') 0 no-repeat;
+      }
+    }
+  }
+
+  &_link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: $lightGreenColor;
+    }
+  }
+
+  &_login {
+    color: #FFFFFF;
+    font-size: 16px;
+    background: $darkGreenColor;
+    padding: 32px 0 24px !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer {
+    &_top {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_bottom_inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}

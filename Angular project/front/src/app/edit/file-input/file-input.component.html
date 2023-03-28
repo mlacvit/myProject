@@ -1,0 +1,19 @@
+<div
+  class="file-input-container"
+  role="group"
+  [attr.aria-labelledby]="_formField?.getLabelId()"
+  (focusin)="onFocusIn($event)"
+  (focusout)="onFocusOut($event)"
+>
+  <input disabled readonly [ngModel]="fileName" />
+  <button
+    [disabled]="disabled"
+    type="button"
+    role="button"
+    mat-raised-button
+    #browseBtn
+  >
+    Browse
+  </button>
+  <input type="file" #fileInput (change)="onFileInputChange($event)" />
+</div>

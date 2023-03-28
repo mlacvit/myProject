@@ -1,0 +1,105 @@
+@import '../../scss/style';
+
+.icons-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 600px) {
+    margin-top: 30px;
+  }
+}
+
+.icons-item {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  display: grid;
+  place-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:nth-child(2) {
+    margin: 0 10px;
+  }
+
+  &--active {
+    position: absolute;
+    right: 131px;
+  }
+
+  &--active-icon {
+    background: #ADFA00;
+    padding: 12px;
+    border-radius: 50%;
+  }
+}
+
+.icons-item:hover {
+  background-color: #ADFA00;
+  transition: .3s;
+}
+
+.icons-item:active {
+  background-color: #ADFA00;
+  transition: .3s;
+}
+
+.filter-icon-item {
+  margin: 0 24px;
+}
+
+.course-btn {
+  cursor: pointer;
+  display: block;
+  margin: 54px auto 0;
+  border: none;
+  color: black;
+  background-color: $lightGreenColor;
+  border-radius: 50px;
+  padding: 12px 85.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .3s;
+
+  &:hover {
+    transition: .3s;
+    background: $whiteBorderColor;
+  }
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.icon-value {
+  border: 2px solid #D1D1D6;
+  padding: 1.5vh 38vh 1.5vh 3vh;
+  border-radius: 24px;
+  background: transparent;
+
+  @include xl {
+    padding: 1.5vh 20vh 1.5vh 3vh;
+
+  }
+
+  @media screen and (max-width: 905px) {
+    padding: 1.5vh 13vh 1.5vh 3vh;
+  }
+
+  @media screen and (max-width: 845px) {
+    padding: 1.5vh 1vh 1.5vh 3vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 1.5vh 1vh 1.5vh 3vh;
+  }
+}
+
+.icon-value::placeholder {
+  color: black;
+  font-size: 16px;
+}

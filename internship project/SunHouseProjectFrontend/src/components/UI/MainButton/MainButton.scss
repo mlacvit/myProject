@@ -1,0 +1,51 @@
+@import '../../../scss/style';
+
+.MainButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  gap: 10px;
+  padding: 10px 32px;
+  color: $darkGreenColor;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all .3s ease;
+  box-shadow: 0 2px 4px -2px rgba(24, 39, 75, 0.12), 0 4px 4px -2px rgba(24, 39, 75, 0.08);
+}
+
+.GreenButton {
+  background-color: $lightGreenColor;
+}
+
+.RedButton {
+  background-color: $totalRedColor;
+}
+
+.WhiteButton {
+  background-color: $totalWhiteColor;
+}
+
+.GreyButton {
+  background-color: $greyColor;
+}
+
+.DarkGreyButton {
+  background-color: $whiteBorderColor;
+}
+
+.TransparentButton {
+  background-color: transparent;
+  border: 2px solid $whiteBorderColor;
+}
+
+.MainButton:disabled {
+  cursor: not-allowed;
+  background: #dadada;
+  color: #888888;
+}

@@ -1,0 +1,56 @@
+@import '../../../scss/style';
+
+.category {
+  &__wrapper {
+    max-width: 800px;
+    height: auto;
+    max-height: 500px;
+    background-color: $totalWhiteColor;
+    border-radius: 16px;
+    padding: 15px;
+    overflow-y: auto;
+
+  }
+
+  &__inner-block {
+    font-size: 17px;
+    border: 1px solid $greyColor;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+
+    &-title {
+      font-weight: bold;
+    }
+
+    &-content {
+      padding-bottom: 15px;
+    }
+
+    &-btn {
+      background-color: red;
+    }
+  }
+
+  &__add-category {
+    background-color: $totalWhiteColor;
+    max-width: 800px;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    &-title {
+      padding-bottom: 15px;
+    }
+
+    &-input {
+      margin-bottom: 15px;
+      max-width: 600px;
+    }
+
+    &-btn {
+      cursor: not-allowed;
+      background-color: $greyColor;
+    }
+  }
+}

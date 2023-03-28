@@ -1,0 +1,82 @@
+@import '../../scss/style';
+
+.test-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 1px solid $darkGreyColor;
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      height: 16px;
+      width: 16px;
+      margin: 0 10px;
+    }
+
+    &__title {
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  &__progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    flex-wrap: wrap;
+
+    &__text {
+      font-weight: 500;
+      color: $blueDarkColor;
+      margin: 0 50px 0 20px;
+    }
+
+    &__circle {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__moreBtn {
+      transform: rotate(-90deg);
+      border: none;
+
+      &.open {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  &__questions {
+    width: 100%;
+    padding: 10px 40px;
+
+    &__question {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__title {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0 20px 0 0;
+      }
+
+      &__icon {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+}
+
+.test-item:last-child {
+  border-bottom: none;
+}

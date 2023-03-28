@@ -1,0 +1,97 @@
+@import '../../../scss/style';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 20px;
+
+  &__title {
+    font-size: 20px;
+    padding: 0 0 43px 0;
+  }
+
+  &__buttons-block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__btn {
+    padding: 10px 50px;
+  }
+
+  &__btn:hover {
+    background-color: $whiteBorderColor;
+  }
+
+  &__btn-two {
+    padding: 10px 60px;
+  }
+
+  &__btn-two:hover {
+    background: $whiteBorderColor;
+  }
+
+  &__text {
+    margin: 40px 0;
+    display: inline-block;
+  }
+
+  &__select-buttons-block {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  &__select-button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    width: 140px;
+    height: 140px;
+    padding: 10px 0;
+
+    &__active {
+      background-color: #F2F2F7;
+    }
+
+    &__img {
+      width: 50px;
+      flex-grow: 1;
+    }
+
+    &__sub {
+      font-size: 20px;
+      padding: 12px 0;
+    }
+
+    &:hover {
+      background-color: #F2F2F7;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .content__select-buttons-block {
+    width: 100%;
+  }
+
+  .content__img {
+    width: 30px;
+  }
+
+  .content__btn-two {
+    padding: 10px 20px;
+  }
+  .content__btn {
+    padding: 10px 20px;
+  }
+}

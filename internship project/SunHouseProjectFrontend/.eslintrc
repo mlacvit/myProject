@@ -1,0 +1,83 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "jsx-a11y",
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "./client/tests/*",
+    "./client/styles/*"
+  ],
+  "rules": {
+    // javascript
+    "semi": 0,
+    "camelcase": 1,
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "no-return-assign": 1,
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    // react
+    "no-param-reassign": 0,
+    "no-empty": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/mouse-events-have-key-events": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/button-has-type": 1,
+    "jsx-a11y/anchor-has-content": 1,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/no-static-element-interactions": 1,
+    "react-hooks/exhaustive-deps": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/require-default-props": 0,
+    "react/forbid-prop-types": [
+      1,
+      {
+        "forbid": [
+          "any"
+        ]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".jsx",
+          ".js"
+        ]
+      }
+    ],
+    "react/state-in-constructor": 0,
+    "react/no-array-index-key": 0,
+    // imports
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    // prettier
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "printWidth": 120,
+        "tabWidth": 2,
+        "tabs": false,
+        "arrowParens": "avoid"
+      }
+    ]
+  }
+}

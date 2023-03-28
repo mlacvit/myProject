@@ -1,0 +1,20 @@
+@import '../../scss/style';
+
+.main{
+  background-color: $silverColor;
+
+  .block__add-link{
+    color: #1C1C1E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+}
+
+.review-block {
+  scroll-margin-top: 150px;
+}
+
+.about-block {
+  scroll-margin-top: 230px;
+}

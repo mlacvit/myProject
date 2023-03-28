@@ -1,0 +1,125 @@
+@import '../../scss/style';
+
+.course-passing-modules {
+  &__block {
+    background: $totalWhiteColor;
+    border-radius: 16px;
+    margin-bottom: 32px;
+
+    &-structure {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 32px;
+    }
+
+    &-header {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 23px 13px 23px 31px;
+
+      &--is-open {
+        padding-bottom: 18px;
+        border-bottom: 2px solid $greyColor;
+      }
+
+      & i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-left: 20px;
+    }
+
+    &-button {
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      margin: 0 0 0 auto;
+      transition: all .5s ease;
+
+      svg {
+        transition: all .6s ease;
+      }
+
+      &--is-open svg {
+        transform: rotate(90deg);
+      }
+
+      &:hover svg circle {
+        fill: $greyColor;
+      }
+    }
+
+    &-content {
+      background-color: $totalWhiteColor;
+      overflow: hidden;
+      max-height: 0;
+      transition: all 0.4s ease;
+
+      &--is-open {
+        align-content: center;
+        background-color: $totalWhiteColor;
+        max-height: 100vh;
+        transition: all 0.9s ease;
+        border-radius: 16px;
+      }
+    }
+
+    &-items {
+      margin: 0;
+      list-style-type: none;
+    }
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: 5px 15px;
+      margin: 20px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+
+      &--active {
+        border-radius: 10px;
+        background: $greyColor;
+      }
+
+      &-title {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        flex-flow: row nowrap;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        color: $totalBlackColor;
+        text-decoration: none;
+        transition: all .3s ease;
+
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          margin-right: 24px;
+        }
+
+        &--disabled {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

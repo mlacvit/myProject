@@ -1,0 +1,12 @@
+.verify-block {
+  padding: 20px 25px;
+  background: #ADFA00;
+  border-radius: 13px;
+  text-align: center;
+
+  &__link {
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 16px;
+  }
+}

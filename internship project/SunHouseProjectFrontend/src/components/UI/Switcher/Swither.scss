@@ -1,0 +1,35 @@
+.switch-btn {
+  display: inline-block;
+  width: 33px;
+  height: 21px;
+  border-radius: 15.5px;
+  background: #F2F2F7;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms;
+}
+
+.switch-btn::after {
+  content: "";
+  height: 18px;
+  width: 18px;
+  border-radius: 17px;
+  background: #fff;
+  top: 1.5px;
+  left: 0;
+  transition-duration: 300ms;
+  position: absolute;
+  z-index: 1;
+}
+
+.switch-on {
+  background: #ADFA00;
+}
+
+.switch-on::after {
+  left: 13px;
+}

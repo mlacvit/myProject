@@ -1,0 +1,27 @@
+.check {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px;
+  border: 1px solid #F2F2F7;
+  border-radius: 20%;
+  &:checked {
+    padding: 8px;
+    background: #ADFA00;
+    position: relative;
+  }
+  &:checked:before {
+    content:"\2713";
+    color: white;
+    padding: initial;
+    font-weight: bold;
+    font-size: 21px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+  }
+}
+
+
+
+

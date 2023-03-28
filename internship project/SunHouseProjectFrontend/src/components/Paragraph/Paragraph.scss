@@ -1,0 +1,111 @@
+@import '../../scss/style';
+
+.block {
+  &__paragraph {
+    display: flex;
+    align-items: center;
+    margin-bottom: 54px;
+    position: relative;
+    width: 100%;
+
+    @media (max-width: 415px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    .logo {
+      min-width: 48px;
+      margin-top: -31px;
+    }
+  }
+
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 16px;
+
+    @media (max-width: 470px) {
+      font-size: 30px;
+    }
+
+    span {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+
+  &__add-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    background: transparent;
+    color: #828282;
+    text-align: left;
+  }
+
+  &__card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 24px;
+  }
+
+  &__modal {
+    padding: 30px 0;
+  }
+
+  &__modal-title {
+    margin-bottom: 32px;
+    font-size: 22px;
+  }
+
+  &__add-description {
+    width: 80%;
+    margin-bottom: 16px;
+    padding: 12px 19px 11px 19px;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 16px;
+    border: $lightGreenColor 2px solid;
+  }
+
+  &__modal-btn {
+    border-radius: 16px;
+    height: 45px;
+    min-width: 50%;
+    font-weight: 500;
+    font-size: 19px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all .5s ease;
+
+    &:hover {
+      background: $lightGreenColor;
+    }
+  }
+}
+
+
+.eye-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  opacity: 1;
+
+  path {
+    fill: #828282;
+    transition: all .3s ease;
+  }
+}

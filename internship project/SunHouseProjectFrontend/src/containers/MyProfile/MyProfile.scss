@@ -1,0 +1,174 @@
+@import '../../scss/style';
+
+.profile {
+  background: linear-gradient(to right, $totalWhiteColor 0%, $totalWhiteColor 30%, $greyColor 30%, $greyColor 100%);
+  @media(max-width: 1020px) {
+    background: $greyColor;
+  }
+
+  &__inner {
+    display: flex;
+    @include sm {
+      display: block;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 280px;
+      height: 40px;
+    }
+  }
+
+  &__sidebar {
+    width: 349px;
+    background: $totalWhiteColor;
+    padding: 32px 42px 0 7px;
+    border-radius: 0 16px 16px 0;
+    @include sm {
+      margin: 0 auto;
+      padding: 32px 42px 1px 42px;
+      border-radius: 16px;
+    }
+
+    &_list {
+      text-align: center;
+      margin-bottom: 20px;
+      display: none;
+      @include sm {
+        display: block;
+      }
+    }
+
+    &-top {
+      &-logo {
+        margin-bottom: 51px;
+      }
+
+      &-user {
+        background: $greyColor;
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        border-radius: 16px;
+        margin-bottom: 77px;
+
+        &-avatar {
+          margin-right: 16px;
+        }
+
+        &-username {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 20px;
+          font-weight: 700;
+
+          &-ban {
+            display: inline-block;
+            color: red;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    &-bottom {
+      padding-bottom: 226px;
+      display: none;
+      @include sm {
+        padding-bottom: 100px;
+        display: block;
+      }
+
+      &-block {
+        padding-bottom: 50px;
+        @include sm {
+          display: none;
+        }
+      }
+
+      &-burger {
+        padding-bottom: 50px;
+        @media screen and (min-width: 790px) {
+          display: none;
+        }
+      }
+
+      &-nav {
+        font-size: 20px;
+        font-weight: 700;
+
+        &-list {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          &-item {
+            border-bottom: 2px solid $darkGreyColor;
+
+            &:hover {
+              color: $lightGreenColor;
+
+              & path {
+                fill: $lightGreenColor;
+                transition: all 0.3ms;
+              }
+            }
+
+            &-link {
+              padding: 22px 0;
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              align-items: center;
+
+              &--active {
+                color: $lightGreenColor;
+
+                & path {
+                  fill: $lightGreenColor;
+                  transition: all 0.3ms;
+                }
+              }
+            }
+
+            &-icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 24px;
+              height: 24px;
+              margin-right: 32px;
+            }
+
+            &-logout-button {
+              cursor: pointer;
+              width: 100%;
+              padding: 22px 0;
+              display: flex;
+              align-items: center;
+              background: none;
+              border: none;
+              font-size: 20px;
+              font-weight: 700;
+              font-family: inherit;
+
+              &:hover {
+                color: $lightGreenColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    flex: 1;
+    padding: 28px 0 32px 38px;
+    @include sm {
+      padding: 28px 10px 28px;
+    }
+  }
+}

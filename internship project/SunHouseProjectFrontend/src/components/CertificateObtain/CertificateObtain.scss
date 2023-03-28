@@ -1,0 +1,65 @@
+@import "../../scss/style";
+
+.certificate-obtain {
+  padding: 32px 0 0;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__certificate {
+    margin: 32px 0 0;
+
+    &__image {
+      height: 50%;
+      width: auto;
+      max-width: 100%;
+    }
+
+    &__btns {
+      display: flex;
+      justify-content: right;
+      align-items: stretch;
+      padding: 32px 0;
+
+      &__download {
+        margin: 0 18px 0;
+        display: flex;
+        padding: 0;
+
+        &__link {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 700;
+          color: $darkGreenColor;
+          padding: 12px 64px;
+          width: 100%;
+
+          &:hover {
+            color: $totalWhiteColor;
+          }
+        }
+
+        &:hover {
+          background: $lightGrey;
+        }
+      }
+
+      &__linkCopy {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+
+        &:hover {
+          background: $lightGrey;
+        }
+
+        &__icon {
+          display: grid;
+          place-content: center;
+        }
+      }
+    }
+  }
+}

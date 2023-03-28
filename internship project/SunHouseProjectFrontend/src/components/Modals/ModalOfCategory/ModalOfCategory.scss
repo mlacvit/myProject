@@ -1,0 +1,61 @@
+.modal-category {
+  padding: 24px 0 24px 24px;
+  background: #FFFFFF;
+  width: 334px;
+  border-radius: 16px;
+  box-shadow: 0 0 9px grey, 0 0 9px grey;
+
+  &__block {
+    padding: 22px 16px 0 22px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__list {
+    cursor: pointer;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 16px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    display: block;
+
+    &:hover {
+      color: #ADFA00;
+    }
+
+    &:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 7px;
+      left: -19px;
+      background: url("../../../assets/icons/listIcon.png") no-repeat;
+    }
+
+    &:hover:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 7px;
+      left: -19px;
+      background: url("../../../assets/icons/listIconActive.png") no-repeat;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .popup-content {
+    left: 17% !important;
+  }
+
+  .popup-content2-content {
+    left: 17% !important;
+  }
+}

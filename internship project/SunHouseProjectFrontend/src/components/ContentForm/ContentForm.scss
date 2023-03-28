@@ -1,0 +1,90 @@
+@import '../../scss/style';
+
+.content-form {
+  width: 100%;
+  padding: 24px 24px 32px;
+  background: white;
+  border-radius: 16px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &__files {
+    &-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+
+    &-file {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__editor-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__remove {
+    cursor: pointer;
+    position: absolute;
+    width: 19px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    top: 24px;
+    right: 27px;
+    border: none;
+    background-color: transparent;
+
+    &:hover path {
+      fill: $totalRedColor;
+      transition: 0.3ms;
+    }
+
+    & path {
+      transition: all .3s ease;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    & span {
+      white-space: normal;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin-right: 20px;
+
+    &:hover {
+      background-color: $whiteBorderColor;
+    }
+  }
+}
+
+.video-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,27 @@
+<div class="form-container">
+  <form (ngSubmit)="onSubAlbum()" #f="ngForm">
+    <mat-form-field appearance="outline">
+      <mat-label>title</mat-label>
+      <input type="text" name="title" matInput required ngModel>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>year</mat-label>
+      <input type="text" name="year" matInput ngModel>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>image</mat-label>
+      <app-file-input name="image" ngModel></app-file-input>
+    </mat-form-field>
+
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="f.invalid"
+    >
+      create
+    </button>
+  </form>
+</div>

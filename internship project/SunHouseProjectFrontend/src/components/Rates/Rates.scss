@@ -1,0 +1,62 @@
+@import '../../scss/style';
+
+.all {
+  background-color: $greyColor;
+  padding: 100px 190px;
+  position: relative;
+}
+.rates {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.titleLogo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  position: absolute;
+  top: 7%;
+  left: 25%;
+}
+
+.logo {
+//  width: 30px;
+//  margin-right: 10px;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards:hover {
+  transform: scale(1.1);
+}
+
+.item {
+  width: 20%;
+}
+
+
+.content {
+  padding: 20px 0;
+}
+
+.btn {
+  font-size: 14px;
+  cursor: pointer;
+}
+

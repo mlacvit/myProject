@@ -1,0 +1,23 @@
+@import '../../scss/style';
+
+.partner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 130px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 1;
+
+  @media (max-width: 600px) {
+    width: initial;
+    margin-inline: 20px;
+  }
+
+  img {
+    display: inline-block;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../../scss/style';
+
+.admin-notification {
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $lightGrey;
+    padding: 32px 0px 24px 24px;
+  }
+
+  &__inner-block {
+    max-width: 800px;
+    height: auto;
+    background-color: $totalWhiteColor;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    max-height: 800px;
+    overflow: auto;
+
+    &-wrapper {
+      max-width: 775px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &-button {
+      background: none;
+      border: none;
+
+      &:hover {
+        & path {
+          fill: $lightGreenColor;
+          transition: 0.3ms;
+        }
+      }
+    }
+  }
+
+  &__names {
+    padding: 16px 0px 16px 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $totalBlackColor;
+  }
+
+  &__underline {
+    max-width: 752px;
+    border: 1px solid #F2F2F7;
+  }
+
+  &-button {
+    border: none;
+    background: none;
+  }
+
+  &__message-from {
+    margin: 25px;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
+  &__form {
+    &-disabled {
+      background-color: $greyColor;
+      cursor: not-allowed;
+
+    }
+
+    &-area {
+      margin-bottom: 15px;
+    }
+
+
+  }
+}
+

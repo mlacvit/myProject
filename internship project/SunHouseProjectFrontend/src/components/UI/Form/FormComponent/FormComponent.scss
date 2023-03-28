@@ -1,0 +1,81 @@
+@import '../../../../scss/style';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 32px;
+  background: white;
+  border-radius: 16px;
+
+  &_title {
+    align-self: flex-start;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin: 32px 0;
+  }
+
+  &_input {
+    margin-bottom: 16px;
+    border: 2px solid #D1D1D6;
+  }
+
+  &_btn {
+    padding: 15px 0;
+    width: 100%;
+
+    &:hover {
+      background: rgba(144, 206, 1, 0.8);
+    }
+
+    &:active {
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &_socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &_socialItems {
+    padding: 0 10px;
+  }
+
+  &_text {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 24px 0 16px;
+  }
+
+  &_googleLink {
+    border: 1px solid black;
+  }
+
+  &_loginLink {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 32px 0 32px;
+
+  }
+
+  &_loginLink_span {
+    color: #ADFA00;
+    text-decoration: none;
+  }
+
+  &_forgotPass {
+    text-align: right;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  &_forgotPass:hover {
+    color: #ADFA00;
+    transition: .2s;
+  }
+}

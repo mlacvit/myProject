@@ -1,0 +1,58 @@
+@import '../../scss/style';
+
+.loginRegisterForm {
+  display: grid;
+  align-items: center;
+  min-height: calc(100vh - 106px - 74px); // 106px = header, 74px = footer
+  padding: 40px 15px;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: space-between;
+    grid-template-columns: 480px 458px;
+  }
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+}
+
+.form {
+  @media screen and (max-width: 1023px) {
+    order: 2;
+  }
+
+  &_socialLinks img {
+    margin: 0 15px;
+  }
+}
+
+.formBlock {
+  @media screen and (max-width: 1023px) {
+    order: 1;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+
+    @media screen and (max-width: 1023px) {
+      width: 30%;
+      min-width: 160px;
+      margin: 20px auto;
+    }
+  }
+
+  &_content {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  &_word {
+    color: #ADFA00;
+  }
+}
+
+.footer-login{
+  @media(max-width: 768px) {
+
+    }
+}

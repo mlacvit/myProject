@@ -1,0 +1,67 @@
+@import '../../scss/style';
+
+.program-block {
+  &__check{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  &__card {
+    background: $totalWhiteColor;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+
+    &_structure-title{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      svg{
+        margin-right: 25px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 24px 25px;
+  }
+
+  &__card-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin-right: 20px;
+    transition: all .5s ease;
+
+    svg {
+      transition: all .6s ease;
+    }
+
+    &.is-open svg {
+      transform: rotate(90deg);
+    }
+
+    &:hover svg circle {
+      fill: $greyColor;
+    }
+
+    svg circle {
+      transition: all .5s ease;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../scss/style";
+
+.homework {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    margin-top: 30px;
+
+    &:hover {
+      background: $whiteBorderColor;
+    }
+  }
+}

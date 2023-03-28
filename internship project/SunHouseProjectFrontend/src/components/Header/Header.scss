@@ -1,0 +1,41 @@
+@import '../../scss/style';
+
+.header {
+  background: $darkGreenColor;
+  padding: 25px 0 !important;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &--scroll {
+    padding: 14px 0 !important;
+  }
+
+  &__container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  &_logo {
+    font-size: 30px;
+
+    img {
+      width: 294px;
+      height: 49px;
+    }
+  }
+
+  &_MainButton {
+    font-size: 16px;
+    background-color: $lightGreenColor;
+  }
+}
+
+@media (max-width: 576px) {
+  .header_logo {
+    display: none;
+  }
+}

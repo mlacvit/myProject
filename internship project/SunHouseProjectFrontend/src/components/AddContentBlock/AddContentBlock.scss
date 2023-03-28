@@ -1,0 +1,83 @@
+@import '../../scss/style';
+
+.add-content-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px 100px 32px;
+  background: $greyColor;
+  border-radius: 16px;
+
+  &__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &__types {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__type {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    height: 140px;
+    background: white;
+    border-radius: 16px;
+    padding: 28px 0 29px;
+    border: 2px solid transparent;
+    transition: all .5s ease;
+
+    &:hover{
+      border-color: #ADFA00;
+      transform: scale(1.1);
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      background-size: cover;
+    }
+
+    &--text {
+      &::before {
+        width: 40px;
+        height: 40px;
+        background-image: url("../../assets/icons/Group.svg");
+      }
+    }
+
+    &--video {
+      &::before {
+        width: 48px;
+        height: 48px;
+        background-image: url("../../assets/icons/video.svg");
+      }
+    }
+
+    &--audio {
+      &::before {
+        width: 39px;
+        height: 48px;
+        background-image: url("../../assets/icons/audio.svg");
+      }
+    }
+
+    &-label {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}

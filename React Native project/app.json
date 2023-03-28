@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "verbos",
+    "slug": "places-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/iconverbo.png",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconverbo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.mlac.verbos"
+    },
+    "web": {
+      "favicon": "./assets/iconverbo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3d3efb8f-82ac-46ce-9cc3-ed60dc511b59"
+      }
+    }
+  }
+}

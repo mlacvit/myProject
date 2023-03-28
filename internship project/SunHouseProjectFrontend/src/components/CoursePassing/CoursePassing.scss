@@ -1,0 +1,42 @@
+@import "../../scss/style";
+
+.course-passing {
+  &__bottom {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    grid-gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    &-button {
+      display: grid;
+      place-content: center;
+      background: none;
+      overflow: hidden;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover rect {
+        fill: $whiteBorderColor;
+      }
+
+      &:disabled rect {
+        fill: $whiteBorderColor;
+      }
+    }
+
+    &-end-button {
+      &:hover {
+        background: $whiteBorderColor;
+      }
+    }
+  }
+}

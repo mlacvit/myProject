@@ -1,0 +1,17 @@
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 37px;
+    margin-right: 24px;
+    background: url('../../../assets/icons/greenSpot.svg') 0 no-repeat;
+  }
+}

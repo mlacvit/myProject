@@ -1,0 +1,40 @@
+<div class="form-container">
+  <div class="error" *ngIf="error | async">{{ error | async }}</div>
+
+  <mat-progress-bar mode="indeterminate" *ngIf="loading | async else musicCreate"></mat-progress-bar>
+
+  <ng-template #musicCreate>
+    <form (ngSubmit)="onSub()" #f="ngForm">
+      <mat-form-field appearance="outline">
+        <mat-label>artist</mat-label>
+        <input type="text" name="artist" matInput required ngModel>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>description</mat-label>
+        <textarea
+          name="description"
+          matInput
+          ngModel
+          cdkTextareaAutosize
+          cdkAutosizeMinRows="5"
+        >
+      </textarea>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>image</mat-label>
+        <app-file-input name="image" ngModel></app-file-input>
+      </mat-form-field>
+
+      <button
+        type="submit"
+        mat-raised-button
+        color="primary"
+        [disabled]="f.invalid || (loading | async)"
+      >
+        create
+      </button>
+    </form>
+  </ng-template>
+</div>

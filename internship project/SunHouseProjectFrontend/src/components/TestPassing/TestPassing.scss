@@ -1,0 +1,90 @@
+@import '../../scss/style';
+
+.passing-test {
+  width: 100%;
+  color: $blackDarkColor;
+  margin-bottom: 20px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: $totalBlackColor;
+    margin-bottom: 32px;
+
+    &-icon {
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+  &__question {
+    padding: 24px 24px;
+    background: $totalWhiteColor;
+    border-radius: 16px;
+    margin-bottom: 20px;
+
+    &-title {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      list-style: none;
+      padding-right: 20px;
+
+      &-answer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+
+        &-title {
+          flex: 1;
+          border: 2px solid $greyColor;
+          border-radius: 8px;
+          padding: 10px 15px;
+          margin-right: 25px;
+        }
+
+        &-checkbox {
+          display: block;
+          position: relative;
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          &:hover &-checkmark path {
+            fill: $darkGreyColor;
+          }
+
+          &-input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__save-button {
+    font-size: 16px;
+    padding: 10px 86px;
+
+    &:hover {
+      background: $whiteBorderColor;
+    }
+  }
+}

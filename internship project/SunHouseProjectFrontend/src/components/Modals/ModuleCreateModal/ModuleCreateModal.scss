@@ -1,0 +1,35 @@
+@import '../../../scss/style';
+
+
+.content__module {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+
+  &__title {
+    font-size: 20px;
+    padding: 0 0 20px 0;
+  }
+
+  &__label {
+    display: block;
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  &__form {
+    width: 100%;
+    text-align: left;
+  }
+
+  &__button {
+    width: 100%;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $whiteBorderColor;
+    }
+  }
+}

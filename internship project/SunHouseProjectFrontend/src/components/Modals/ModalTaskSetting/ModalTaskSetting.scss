@@ -1,0 +1,32 @@
+.content__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+
+  &__img {
+    width: 70px;
+    padding-bottom: 30px;
+    align-self: center;
+  }
+
+  &__label {
+    display: block;
+    padding: 22px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+}

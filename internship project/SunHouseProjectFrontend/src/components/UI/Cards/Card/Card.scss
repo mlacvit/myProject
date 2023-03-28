@@ -1,0 +1,19 @@
+@import '../../../../scss/style';
+
+.Card {
+  border-radius: 16px;
+  border: none;
+  padding: 32px;
+}
+
+.GreyCard {
+  background-color: $greyColor;
+}
+
+.WhiteCard {
+  background-color: $totalWhiteColor;
+}
+
+.GreenCard {
+  background-color: $lightGreenColor;
+}

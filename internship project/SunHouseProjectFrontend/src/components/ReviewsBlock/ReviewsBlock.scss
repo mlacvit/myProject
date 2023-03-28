@@ -1,0 +1,18 @@
+@import "../../scss/partials/colors";
+
+.review_block {
+  padding-bottom: 200px;
+  overflow: hidden;
+  padding-top: 100px;
+
+  &_headline_title {
+    color: $blueDarkColor;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 32px;
+    padding-left: 60px;
+    background: url('../../assets/icons/Vector.svg') no-repeat;
+  }
+}

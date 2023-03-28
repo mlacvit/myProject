@@ -1,0 +1,41 @@
+@import "../../scss/style";
+
+.certificate {
+  max-width: 380px;
+  border-radius: 16px;
+  background: $totalWhiteColor;
+  padding: 24px;
+
+  &__image-block {
+    max-width: 332px;
+    height: 211px;
+    border: 2px solid $whiteBorderColor;
+    border-radius: 16px;
+    overflow: hidden;
+
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content-block {
+    margin-top: 27px;
+    padding: 5px 1px;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+      color: $darkGreenColor;
+    }
+
+    &-datetime {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: $totalBlackColor;
+      margin-top: 12px;
+    }
+  }
+}

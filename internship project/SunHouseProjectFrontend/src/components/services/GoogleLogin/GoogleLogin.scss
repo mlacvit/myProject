@@ -1,0 +1,16 @@
+.google {
+  margin: 0 30px;
+  border: 1px solid #F2F2F7;
+  padding: 16px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  transform-origin: 50% 50%;
+
+  &:hover {
+    transform: scale(0.85);
+  }
+
+  &:active {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1)
+  }
+}

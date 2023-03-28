@@ -1,0 +1,93 @@
+@import '../../scss/style';
+
+.video-card {
+  &::before {
+    width: 64px;
+    height: 64px;
+    background: url("../../assets/icons/video.svg") no-repeat;
+  }
+}
+
+.audio-card {
+  &::before {
+    width: 52px;
+    height: 64px;
+    background: url("../../assets/icons/audio.svg") no-repeat;
+  }
+}
+
+.uploader-block {
+  border: 2px solid $greyColor;
+  border-radius: 16px;
+  background: $totalWhiteColor;
+  padding: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 32px;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  &__button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: all .5s ease;
+
+    &:hover {
+      background: transparent;
+      border-color: $lightGreenColor;
+    }
+  }
+}
+
+.file-card {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    background: $greyColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 24px;
+    width: 280px;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url("../../assets/icons/chain.svg") no-repeat;
+    }
+
+    &:hover {
+      background: $darkGreyColor;
+    }
+  }
+
+  &__placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    color: $lightGrey;
+  }
+}
+
+.uploader-block,
+.file-card {
+  input[type=file] {
+    display: none;
+  }
+}

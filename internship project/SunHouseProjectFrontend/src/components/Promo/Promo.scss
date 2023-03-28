@@ -1,0 +1,112 @@
+@import '../../scss/style';
+
+.promo {
+  padding: 130px 0 175px;
+  position: relative;
+  background-color: $darkGreenColor;
+
+  &_inner {
+    display: flex;
+    @include xl {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &_column_left {
+    z-index: 1;
+    width: 50%;
+  }
+
+  &_column_right {
+    width: 40%;
+  }
+
+  &_title {
+    font-size: 74px;
+    margin: 0;
+    color: $totalWhiteColor;
+  }
+
+  &_logo {
+    @include xl {
+      width: 40%;
+
+    }
+  }
+
+  &_button {
+    padding: 16px 48px;
+    font-size: 20px;
+  }
+
+  &_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    color: $totalWhiteColor;
+  }
+
+  &_image {
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    transform: scale(1) rotate(0);
+    animation: anim 2s alternate infinite;
+    @include xxl {
+      right: 8%;
+    }
+    @include xfl {
+      width: 40%;
+      top: 60%;
+      transform: translateY(20%);
+    }
+    @include xl {
+      width: 40%;
+      top: 50%;
+      transform: translateY(10%);
+    }
+
+    &_img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@keyframes anim {
+  0% {
+    top: 6%;
+  }
+  100% {
+    top: 9%;
+  }
+
+}
+
+
+@media (max-width: 1000px) {
+  .promo {
+
+    &_title {
+      font-size: 28px;
+    }
+
+    &_column {
+
+      &_left {
+        background: transparent;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+
+    &_image {
+      filter: blur(5px);
+      width: 80%;
+      margin-top: -100px;
+    }
+  }
+
+}

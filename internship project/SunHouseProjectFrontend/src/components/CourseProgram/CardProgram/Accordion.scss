@@ -1,0 +1,18 @@
+@import '../../../scss/style';
+
+.accordion-content {
+  padding: 0 25px;
+  background-color: $totalWhiteColor;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.9s ease;
+}
+
+.accordion-content.is-open {
+  padding-bottom:25px;
+  align-content: center;
+  background-color: $totalWhiteColor;
+  max-height: 500px;
+  overflow: auto;
+  transition: all 2.0s ease;
+}

@@ -1,0 +1,31 @@
+@import "../../scss/partials/colors";
+
+.course {
+  background-color: $silverColor;
+
+  &__save-btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 64px;
+    margin: 64px auto 193px;
+    transition: all .6s ease;
+    border: 3px solid transparent;
+
+    &:hover {
+      background: transparent;
+      border-color: $lightGreenColor;
+      transition: all .6s ease;
+    }
+
+  }
+
+  &__bottom {
+    margin-bottom: 70px;
+  }
+
+  &__not-found {
+    margin: 30px 0 27%;
+  }
+}

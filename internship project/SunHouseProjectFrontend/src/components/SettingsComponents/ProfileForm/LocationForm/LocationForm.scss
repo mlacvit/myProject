@@ -1,0 +1,22 @@
+@import "../../../../scss/style";
+
+.location-block {
+  max-width: 280px;
+
+  &__form {
+    background: $totalWhiteColor;
+    border-radius: 16px;
+    padding: 16px 12px;
+
+    &-input {
+      width: 256px;
+      color: $totalBlackColor;
+      border: 2px solid $darkGreyColor;
+      font-size: 14px;
+    }
+
+    &-select {
+      margin-bottom: 16px;
+    }
+  }
+}

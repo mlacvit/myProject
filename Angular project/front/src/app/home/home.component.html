@@ -1,0 +1,27 @@
+<div class="container">
+<div class="error" *ngIf="error | async">{{ error | async }}</div>
+  <mat-progress-bar mode="indeterminate" *ngIf="loading | async else musicArea"></mat-progress-bar>
+  <ng-template #musicArea>
+    <div
+      *ngFor="let mus of music | async"
+      class="card"
+      [routerLink]="[mus._id]"
+    >
+      <mat-card>
+        <div *ngIf="mus.image">
+          <img
+            [src]="'http://localhost:8000/uploads/' + mus.image"
+            [alt]="'Photo of' + mus.artist"
+            mat-card-image
+          />
+        </div>
+        <div *ngIf="!mus.image">
+          <h3>no photo</h3>
+        </div>
+        <mat-card-title>
+          <h2>{{ mus.artist }}</h2>
+        </mat-card-title>
+      </mat-card>
+    </div>
+  </ng-template>
+</div>

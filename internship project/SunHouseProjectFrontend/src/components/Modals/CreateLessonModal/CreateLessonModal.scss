@@ -1,0 +1,36 @@
+.content__lesson {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+
+  &__img {
+    width: 70px;
+    padding-bottom: 30px;
+    align-self: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    padding: 0 0 33px 0;
+    text-align: center;
+  }
+
+  &__label {
+    display: block;
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  &__form {
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  &__button {
+    width: 100%;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+  }
+}

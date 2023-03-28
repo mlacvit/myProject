@@ -1,0 +1,92 @@
+@import '../../../scss/partials/colors';
+
+.teacher_card {
+  position: relative;
+  width: 580px;
+  height: 174px;
+  background: $totalWhiteColor;
+  border-radius: 16px;
+  margin-left: 12px;
+  transition: all .5s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+
+  &_content {
+
+    padding: 33px 0 0 33px;
+    display: flex;
+  }
+
+  &_avatar {
+    width: 105px;
+    height: 105px;
+    background: $greyColor;
+    border-radius: 50%;
+
+    &_image {
+      width: 105px;
+      height: 105px;
+    }
+  }
+
+  &_text {
+    margin-left: 24px;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+
+    &_name {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &_description {
+      margin: 8px;
+      padding-right: 30px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__delete-btn {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: inherit;
+    top: 10px;
+    right: 10px;
+
+    &:hover path {
+      fill: darkred;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .teacher_card {
+    width: inherit;
+    margin-inline: 20px;
+    height: fit-content;
+    padding-bottom: 40px;
+
+    &_content {
+      display: flex;
+    }
+
+    &_text {
+      &_description {
+        padding: 0;
+      }
+    }
+  }
+}

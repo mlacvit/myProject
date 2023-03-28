@@ -1,0 +1,55 @@
+@import '../../../scss/style';
+
+.button {
+  background-color: $whiteBorderColor;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 90px;
+  position: absolute;
+  bottom: -50px;
+  cursor: pointer;
+
+  & svg {
+    fill: #F2F2F7;
+  }
+
+  &:hover {
+    background-color: #ADFA00;
+
+    & svg {
+      fill: #FFFFFF;
+    }
+  }
+
+  &_prev {
+    left: 46%;
+  }
+
+  &_next {
+    right: 46%;
+  }
+}
+
+.slick-list {
+  overflow: visible;
+  width: auto;
+}
+
+.slick-list {
+  margin: 0 -12px 0 -10px !important;
+}
+
+@media (max-width: 1000px) {
+  .button {
+    &_prev {
+      left: 35%;
+    }
+
+    &_next {
+      right: 35%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../scss/style';
+
+.course-settings {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: 950px) {
+    justify-content: center;
+  }
+
+  &__left {
+    width: 30%;
+    @media (max-width: 950px) {
+      width: 50%;
+    }
+  }
+
+  &__right {
+    width: 65%;
+
+    @media (max-width: 950px) {
+      width: 90%;
+    }
+
+    &-save-button {
+      margin-top: 40px;
+
+      &:hover {
+        background-color: $whiteBorderColor;
+      }
+    }
+  }
+}

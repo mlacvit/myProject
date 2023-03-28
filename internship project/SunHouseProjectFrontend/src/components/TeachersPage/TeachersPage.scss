@@ -1,0 +1,36 @@
+.teachers-page {
+  &_title {
+    padding: 110px 5px 0 0;
+  }
+
+  &_items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    &_item {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+
+  &_btn {
+    padding: 18px 50px;
+    margin: 30px 0;
+  }
+
+  &__modal_block {
+    padding: 20px;
+
+    &-title {
+      font-size: 20px;
+    }
+
+    &-input {
+      margin: 10px 0;
+    }
+  }
+}

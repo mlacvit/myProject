@@ -1,0 +1,46 @@
+@import '../../../scss/style';
+
+
+.course-control {
+  background-color: $totalWhiteColor;
+  border: 1px solid $greyColor;
+  padding: 15px;
+  border-radius: 8px;
+  height: 800px;
+  overflow-y: auto;
+
+  &__wrapper {
+    background-color: $greyColor;
+    border: 1px solid $lightGrey;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    &-info-block {
+      margin-bottom: 15px;
+    }
+
+    &-title {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &-button {
+      background-color: red;
+    }
+
+    &-open-course {
+      margin-bottom: 15px;
+    }
+
+    &-description {
+      color: $blueDarkColor;
+    }
+  }
+
+
+}
+
+
+
+

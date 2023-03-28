@@ -1,0 +1,13 @@
+.user-courses {
+  &__bottom {
+    &-courses {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      @media(max-width: 1020px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../scss/style";
+
+.passing {
+  margin-bottom: 20px;
+
+  &_title {
+    text-align: center;
+
+    & p {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    & h3 {
+      margin-bottom: 32px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+
+  &_block {
+    background: $totalWhiteColor;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+
+    &__title {
+      background: #F2F2F7;
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 500;
+      width: 100%;
+      padding: 18px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 34px;
+      line-height: 1.5;
+    }
+
+    &__files {
+      &-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+
+      &-file {
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}
+
+iframe {
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+audio {
+  margin-bottom: 32px;
+}
+
+
+.download {
+  margin-bottom: 15px;
+  border-radius: 50px;
+  background: $lightGreenColor;
+  padding: 12px 64px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $totalBlackColor;
+}
