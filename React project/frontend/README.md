@@ -1,4 +1,4 @@
-# group js 14
-## exam 12
-### ` Щеглов Виталий`
+### mongo data base
+### frontend react redux-thunk
+### `backend node.js express`
 
